@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//imports of colors and DOM sizes, Google fonts, math tabs
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "../settings_styling/colors";
+@import "../settings_styling/sizes";
+@import "../settings_styling/setari";
+
+//main design styling
+@import "mainLeftMenu";
+@import "alte_informatii";
+
+//operations area styling
+@import "../operations_area_styling/conversii";
+@import "../operations_area_styling/adunare";
+@import "../operations_area_styling/scadere";
+@import "../operations_area_styling/inmultire";
+@import "../operations_area_styling/impartire";
+@import "../operations_area_styling/radical";
+@import "../operations_area_styling/putere";
+
+//operations info styling
+@import "../operation_info_styling/adunare_info";
+@import "../operation_info_styling/scadere_info";
+@import "../operation_info_styling/inmultire_info";
+@import "../operation_info_styling/impartire_info";
+@import "../operation_info_styling/radicali_info";
+@import "../operation_info_styling/putere_info";
+@import "../operation_info_styling/conversie_info";
+
+//basic body styling
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  max-height: 720px;
+  min-width: 900px;
+}
+
+#loader-logo {
+  background: url("logo.png") no-repeat center center fixed;
+  margin: auto;
+  top: 50%;
+}
+
+#wrapper {
+  min-width: 1200px;
+}
+
+//basic header styling
+header {
+  min-width: 700px;
+  width: 100%;
+  height: 80px;
+  background: #651FFF;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 10px #464646;
+  z-index: 10;
+  h1 {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    padding-bottom: 25px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 90px;
+    left: 850px;
+  }
+}
+
+//styling the "battle field" :))
+.conversie_tab {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+//styling to seem like a SPA(Single Page App)
+#adunare_tab, #scadere_tab, #inmultire_tab, #impartire_tab, #radical_tab, #ridicare_putere_tab, #setari_tab, .conversie_tab {
+  width: $op_width;
+  height: $op_height;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  display: none;
+  z-index: 8;
+}
+
+.spacer {
+  padding: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  p {
+    color: #ececec;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+#adunare_info, #scadere_info, #inmultire_info, #impartire_info, #radical_info, #putere_info, #conversie_info {
+  width: $op_info_width;
+  height: $op_info_height;
+  background: #9C27B0;//#f44336;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  z-index: 8;
+  display: none;
+}
+
+
+
+
+
+
+

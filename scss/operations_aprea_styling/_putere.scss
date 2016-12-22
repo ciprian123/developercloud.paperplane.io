@@ -1,0 +1,51 @@
+#ridicare_putere_tab {
+  #inputputere {
+    height: 400px;
+  }
+  input {
+    position: relative;
+    left: 90px;
+    border-bottom-color: $putere;
+    &:hover {
+      border-bottom-color: $putere_accent;
+    }
+  }
+  button {
+    position: relative;
+    top: 235px;
+    left: -101px;
+    background: $button;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 2px 8px $shadow;
+    &:hover {
+      background: $hover_putere;
+      transition: 0.7s;
+    }
+    img {
+      padding-top: 5px;
+      padding-left: 3px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .presol_pow {
+    transition: 0.8s;
+    color: $shadow;
+    font-size: 20px;
+    position: relative;
+    top: 65px;
+  }
+
+  #rezultatulRidicarii {
+    font-size: 20px;
+    color: $shadow;
+    width: 300px;
+    border-bottom: 2px solid $putere;
+    position: relative;
+    bottom: -15px;
+    left: 230px;
+    text-align: center;
+  }
+}

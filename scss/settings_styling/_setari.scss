@@ -1,0 +1,23 @@
+#teme {
+   margin: auto;
+   position: relative;
+   top: 50px;
+   ul {
+     list-style-type: none;
+     float: left;
+     li {
+        font-size: 20px;
+        padding: 15px;
+        cursor: pointer;
+     }
+   }
+   .red {
+     color: $scadere;
+   }
+   .yellow {
+     color: $impartire;
+   }
+   .blue {
+     color: $scadere_accent;
+   }
+}

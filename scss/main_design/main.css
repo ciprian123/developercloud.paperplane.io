@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+#teme {
+  margin: auto;
+  position: relative;
+  top: 50px; }
+  #teme ul {
+    list-style-type: none;
+    float: left; }
+    #teme ul li {
+      font-size: 20px;
+      padding: 15px;
+      cursor: pointer; }
+  #teme .red {
+    color: #D50000; }
+  #teme .yellow {
+    color: #FFC107; }
+  #teme .blue {
+    color: #304FFE; }
+
+img.putere {
+  width: 28px;
+  height: 28px; }
+
+#menu {
+  z-index: 9;
+  width: 80px;
+  height: 900px;
+  position: absolute;
+  top: 80px;
+  left: 5px; }
+  #menu ul {
+    list-style-type: none;
+    position: relative;
+    right: 40px; }
+    #menu ul li {
+      color: white;
+      font-size: 18px;
+      text-align: center; }
+      #menu ul li img {
+        width: 28px;
+        height: 28px;
+        z-index: 11;
+        padding: 17px; }
+        #menu ul li img.putere {
+          width: 20px;
+          height: 20px;
+          padding: 20.5px; }
+        #menu ul li img.setari {
+          position: relative;
+          top: 40px; }
+      #menu ul li #conversie {
+        z-index: 11; }
+
+#alte_informatii {
+  width: 100%;
+  height: 700px;
+  background: #000000;
+  position: absolute;
+  top: 750px;
+  z-index: 11;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; }
+
+.card {
+  width: 95%;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  bottom: -150px;
+  color: #ececee;
+  font-family: 'Open Sans', sans-serif; }
+  .card a {
+    text-decoration: none;
+    color: #a8a5a7; }
+  .card h2 {
+    padding-left: 20px; }
+  .card .content, .card .card_info {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    color: #e2e2e2;
+    float: left; }
+
+.main {
+  position: relative;
+  top: 200px;
+  margin: auto; }
+
+input {
+  text-align: center;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid #FF4081;
+  width: 310px;
+  height: 50px;
+  color: #606060;
+  position: relative;
+  bottom: -126px;
+  left: 40px;
+  font-size: 20px;
+  padding-left: 5px;
+  background: #1308b9;
+  transition: 0.8s; }
+  input:hover {
+    border-bottom-color: #304FFE; }
+
+#base {
+  position: relative;
+  top: 200px;
+  z-index: 15; }
+
+input:focus, button:focus {
+  outline: none; }
+
+.solutions {
+  position: relative;
+  top: 120px;
+  left: 80px; }
+  .solutions img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: -100px;
+    left: 170px;
+    z-index: 20; }
+  .solutions #conv_sol {
+    text-align: center;
+    position: relative;
+    top: 280px;
+    left: -30px;
+    width: 300px;
+    border-bottom: 2px solid #FF4081;
+    padding: 5px;
+    font-size: 20px;
+    color: #3d4754; }
+
+button {
+  position: relative;
+  left: -170px;
+  top: 320px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  margin: auto;
+  background: #455a64;
+  border: none;
+  color: white;
+  font-size: 22px; }
+  button:hover {
+    background: #3F51B5;
+    transition: 0.5s; }
+
+.conversie_tab {
+  position: relative;
+  left: -5000px; }
+
+#adunare_tab #inputAdunare {
+  height: 400px; }
+#adunare_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom: 2px solid #FF5722; }
+  #adunare_tab input:hover {
+    border-bottom-color: #18FFFF; }
+#adunare_tab button {
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #adunare_tab button:hover {
+    background: #00E676;
+    transition: 0.7s; }
+  #adunare_tab button img {
+    padding-top: 5px;
+    width: 32px;
+    height: 32px; }
+#adunare_tab .presol_add {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#adunare_tab #rezultatulAdunarii {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #FF5722;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#scadere_tab #inputScadere {
+  height: 400px; }
+#scadere_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom-color: #D50000; }
+  #scadere_tab input:hover {
+    border-bottom-color: #304FFE; }
+#scadere_tab button {
+  position: relative;
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #scadere_tab button:hover {
+    background: #3F51B5;
+    transition: 0.7s; }
+  #scadere_tab button img {
+    padding-top: 5px;
+    width: 32px;
+    height: 32px; }
+#scadere_tab .presol_sub {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#scadere_tab #rezultatulScaderii {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #D50000;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#inmultire_tab #inputInmutire {
+  height: 400px; }
+#inmultire_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom-color: #009688; }
+  #inmultire_tab input:hover {
+    border-bottom-color: #FF4081; }
+#inmultire_tab button {
+  position: relative;
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #inmultire_tab button:hover {
+    background: #FF1744;
+    transition: 0.7s; }
+  #inmultire_tab button img {
+    padding-top: 5px;
+    width: 32px;
+    height: 32px;
+    transition: 0.7s; }
+#inmultire_tab .presol_inm {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#inmultire_tab #rezultatulInmultirii {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #009688;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#impartire_tab #inputImpartire {
+  height: 400px; }
+#impartire_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom-color: #FFC107; }
+  #impartire_tab input:hover {
+    border-bottom-color: #673AB7; }
+#impartire_tab button {
+  position: relative;
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #impartire_tab button:hover {
+    background: #311B92;
+    transition: 0.7s; }
+  #impartire_tab button img {
+    padding-top: 5px;
+    width: 32px;
+    height: 32px; }
+#impartire_tab .presol_imp {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#impartire_tab #rezultatulImpartirii {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #FFC107;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#radical_tab #inputRadical {
+  height: 400px; }
+#radical_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom-color: #E91E63; }
+  #radical_tab input:hover {
+    border-bottom-color: #76FF03; }
+#radical_tab button {
+  position: relative;
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #radical_tab button:hover {
+    background: #64DD17;
+    transition: 0.7s; }
+  #radical_tab button img {
+    padding-top: 5px;
+    width: 32px;
+    height: 32px; }
+#radical_tab .presol_rad {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#radical_tab #rezultatulRadicalului {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #E91E63;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#ridicare_putere_tab #inputputere {
+  height: 400px; }
+#ridicare_putere_tab input {
+  position: relative;
+  left: 90px;
+  border-bottom-color: #00dc00; }
+  #ridicare_putere_tab input:hover {
+    border-bottom-color: #00BCD4; }
+#ridicare_putere_tab button {
+  position: relative;
+  top: 235px;
+  left: -101px;
+  background: #455a64;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px #3d4754; }
+  #ridicare_putere_tab button:hover {
+    background: #304FFE;
+    transition: 0.7s; }
+  #ridicare_putere_tab button img {
+    padding-top: 5px;
+    padding-left: 3px;
+    width: 24px;
+    height: 24px; }
+#ridicare_putere_tab .presol_pow {
+  transition: 0.8s;
+  color: #3d4754;
+  font-size: 20px;
+  position: relative;
+  top: 65px; }
+#ridicare_putere_tab #rezultatulRidicarii {
+  font-size: 20px;
+  color: #3d4754;
+  width: 300px;
+  border-bottom: 2px solid #00dc00;
+  position: relative;
+  bottom: -15px;
+  left: 230px;
+  text-align: center; }
+
+#adunare_info {
+  background: #0050ef; }
+
+.content_info {
+  color: white;
+  padding: 0;
+  width: 280px;
+  margin: auto;
+  font-family: 'Arimo', sans-serif;
+  font-size: 18px; }
+
+.card_info {
+  padding: 0;
+  position: relative;
+  top: 80px; }
+
+h3 {
+  color: white;
+  position: relative;
+  top: 60px;
+  text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  max-height: 720px;
+  min-width: 900px; }
+
+#loader-logo {
+  background: url("logo.png") no-repeat center center fixed;
+  margin: auto;
+  top: 50%; }
+
+#wrapper {
+  min-width: 1200px; }
+
+header {
+  min-width: 700px;
+  width: 100%;
+  height: 80px;
+  background: #651FFF;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 10px #464646;
+  z-index: 10; }
+  header h1 {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    padding-bottom: 25px; }
+  header img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 90px;
+    left: 850px; }
+
+.conversie_tab {
+  width: 80%;
+  height: auto;
+  margin: auto; }
+
+#adunare_tab, #scadere_tab, #inmultire_tab, #impartire_tab, #radical_tab, #ridicare_putere_tab, #setari_tab, .conversie_tab {
+  width: 550px;
+  height: 650px;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  display: none;
+  z-index: 8; }
+
+.spacer {
+  padding: 40px; }
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0; }
+  footer p {
+    color: #ececec;
+    font-weight: bold;
+    text-align: center; }
+
+#adunare_info, #scadere_info, #inmultire_info, #impartire_info, #radical_info, #putere_info, #conversie_info {
+  width: 350px;
+  height: 950px;
+  background: #9C27B0;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  z-index: 8;
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

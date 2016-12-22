@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main_design/main.css">
+    <link rel="shortcut icon" href="scss/main_design/logo.png">
+
+    <title>Math Beast</title>
+</head>
+<body>
+<div id="wrapper">
+   <header>
+       <h1>Math Beast</h1>
+   </header>
+
+    <!--main left menu of the app with a list of "options"-->
+   <div id="menu">
+       <ul>
+           <li id="conversie" draggable="false"><img class="conversie" src="icons/conversie.png" /></li>
+           <li id="plus" draggable="false"><img class="adunare" src="icons/plus.png" /></li>
+           <li id="minus" draggable="false"><img class="scadere" src="icons/minus.png" /></li>
+           <li id="ori" draggable="false"><img class="inmultire" src="icons/ori.png" /></li>
+           <li id="divide" draggable="false"><img class="impartire" src="icons/impartire.png" /></li>
+           <li id="radical" draggable="false"><img class="radical" src="icons/radical.png" /></li>
+           <li id="putere" draggable="false"><img class="putere" src="icons/power.png" /></li>
+           <li id="setari" draggable="false"><img class="setari" src="icons/setari.png" /></li>
+       </ul>
+   </div>
+
+   <!-- the adunare tab of application -->
+   <div id="adunare_wrapper">
+   <div id="adunare_tab">
+       <div id="inputAdunare">
+           <input name="Firstnumber" id="FirstNumber" type="number" placeholder="Introduceti primul numar" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumber" type="number" placeholder="Introduceti al doilea numar" min="-1000000" max="10000000"/>
+           <button id="adunare_button" onclick="getAndAdd();" value="Fire_Add"><img src="icons/plus.png"/></button>
+       </div>
+
+       <p class="presol_add">Rezultatul adunarii: </p><p id="rezultatulAdunarii">...</p>
+
+   </div>
+    <!--div with information about adunare -->
+    <div id="adunare_info">
+        <h3>Adunarea numerelor</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Adunarea este o operație aritmetică elementară care totalizează două sau mai multe numere, numite „termenii adunării” într-o singură valoare, numită suma sau „totalul” numerelor respective.
+                Aceasta se poate realiza prin numarare, sisteme numerice, calculator.
+                <br>
+                <br>
+                1 + 2 + 3 + ... n = n * (n + 1) / 2;
+                <br>
+                1234 + 4567 = 6912
+                <br>
+                2 + 2 + 2 + 2 = 2 * 4 = 8
+                <br>
+                a + b = b + a
+                <br>
+                0 + a = a + 0 = a
+                <br>
+                1 + 1 = 2
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- the scadere tab of the app -->
+   <div id="scadere_wrapper">
+   <div id="scadere_tab">
+       <div id="inputScadere">
+           <input name="Firstnumber" id="FirstNumberM" type="number" placeholder="Introduceti primul numar" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumberM" type="number" placeholder="Introduceti al doilea numar" min="-1000000" max="10000000"/>
+           <button id="scadere_button" onclick="getAndSub();" value="Fire_Sub"><img src="icons/minus.png"/></button>
+       </div>
+
+       <p class="presol_sub">Rezultatul scaderii: </p><p id="rezultatulScaderii">...</p>
+   </div>
+
+    <!--div with information about scadere -->
+    <div id="scadere_info">
+        <h3>Scaderea numerelor</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Scăderea este una dintre cele 4 operații aritmetice elementare; este inversul adunării, însemnând că dacă începem cu orice număr la care adăunăm orice numar, apoi scădem numărul pe care l-am adunat, ne întoarcem la numărul cu care am început. Scăderea este reprezentată prin semnul minus.
+                <br>
+                <br>
+                12345 - 12345 = 0
+                <br>
+                1234 + (-) 1234 = 0
+                <br>
+                8 - 2 - 2 - 2 - 2 = 0
+                <br>
+                a + b = b + a
+                <br>
+                a - 0 = a
+                <br>
+                2 - 1 = 1
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <!-- the inmultire tab of the app -->
+   <div id="imnultire_wrapper">
+   <div id="inmultire_tab">
+       <div id="inputInmutire">
+           <input name="Firstnumber" id="FirstNumberOri" type="number" placeholder="Introduceti primul numar" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumberOri" type="number" placeholder="Introduceti al doilea numar" min="-1000000" max="10000000"/>
+           <button id="inmultire_button" onclick="getAndMult();" value="Fire_Inm"><img src="icons/ori.png"/></button>
+       </div>
+
+       <p class="presol_inm">Rezultatul inmultirii: </p><p id="rezultatulInmultirii">...</p>
+
+   </div>
+
+    <!--div with information about inmultire -->
+    <div id="inmultire_info">
+        <h3>Inmultirea numerelor</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Inmulțirea este o operație matematică ce poate fi definită ca o adunare succesivă.
+                <br>Ex: 3 × 4 = 3 + 3 + 3 + 3 = 12.
+                <br>Inmultirea este o operatie comutativa:
+                <br>Ex: a × b = b × a
+
+                <br>Inmultirea este o operatie asociativa:
+                <br>(a × b) × c = a × (b × c).
+                <br>Inmultirea este o operatie distributiva fata de adunare/scadere:
+                <br>Ex: x × (z + y) = x × z + x × y ,
+                <br>Ex: x × (z - y) = x × z - x × y.
+                <br>Inmultirea este o operatie pentru care 1 este element neutru:
+                <br>Ex: 1 × x = x.
+                <br>Inmultirea este o operatie pentru care, dacă un factor este 0, atunci rezultatul va fi egal cu 0:
+                <br>Ex: x×0=0.
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- the impartire tab of the app -->
+   <div id="impartire_wrapper">
+   <div id="impartire_tab">
+       <div id="inputImpartire">
+           <input name="Firstnumber" id="FirstNumberDiv" type="number" placeholder="Introduceti primul numar" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumberDiv" type="number" placeholder="Introduceti al doilea numar" min="-1000000" max="10000000"/>
+           <button id="impartire_button" onclick="getAndDiv();" value="Fire_Imp"><img src="icons/impartire.png"/></button>
+       </div>
+
+       <p class="presol_imp">Rezultatul impartirii: </p><p id="rezultatulImpartirii">...</p>
+
+   </div>
+    <!--div with information about impartire -->
+    <div id="impartire_info">
+        <h3>Impartirea numerelor</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Impartirea este o operatie aritmetica prin care se determina de cate ori un numar poate fi cuprins in altul.
+                <br>
+                <br>Ex: A : B = C, unde
+                <br>A este denumit deîmpărțit
+                <br>B este denumit împărțitor sau divizor
+                <br>C este denumit cât
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- the radical tab of the app -->
+   <div id="radical_wrapper">
+   <div id="radical_tab">
+       <div id="inputRadical">
+           <input name="Firstnumber" id="FirstNumberR" type="number" placeholder="Introduceti numarul" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumberR" type="number" placeholder="Introduceti ordinul radicalului" min="0" max="100"/>
+           <button id="radical_button" onclick="getAndRad();" value="Fire_Imp"><img src="icons/radical.png"/></button>
+       </div>
+
+       <p class="presol_rad">Rezultatul radicalului: </p><p id="rezultatulRadicalului">...</p>
+
+   </div>
+    <!--div with information about radical -->
+    <div id="radical_info">
+        <h3>Radicali</h3>
+        <div class="card_info">
+            <div class="content_info">
+                In matematica, radicalul unui numar reprezinta un alt numar, care ridicat la o putere (denumita ordinul radicalului) este egal cu numarul dat. Daca ordinul unui radical nu este precizat, atunci este vorba implicit de radicalul de ordinul 2, denumit si radacina patrata.
+                <br>Ex: 2 * 2 = 4
+                <br>Radical din 2 este 1,4142135623...
+                <br>Radical din 3 este 1,7320508075...
+                <br>Radical din 4 este 2
+                <br>Radical din 5 este 2,2360679774...
+                <br>Radical din 6 este 2,4494897427...
+                <br>Radical din 7 este 2,6457513110...
+                <br>Radical din 8 este 2,8284271247...
+                <br>Radical din 9 este 3
+                <br>Radical din 10 este 3,162277660...
+            </div>
+        </div>
+    </div>
+    </div>
+
+   <!-- the putere tab of the app -->
+    <div id="putere_wrapper">
+   <div id="ridicare_putere_tab">
+       <div id="inputputere">
+           <input name="Firstnumber" id="FirstNumberPow" type="number" placeholder="Introduceti numarul" min="-10000000" max="10000000"/>
+           <br>
+           <div class="spacer"></div>
+           <input name="Secondnumber" id="SecondNumberPow" type="number" placeholder="Introduceti puterea dorita" min="-100" max="100"/>
+           <button id="putere_button" onclick="getAndPow();" value="Fire_Pwo"><img src="icons/power.png"/></button>
+       </div>
+
+       <p class="presol_pow">Rezultatul puterii: </p><p id="rezultatulRidicarii">...</p>
+
+   </div>
+    <!--div with information about puteri -->
+    <div id="putere_info">
+        <h3>Puteri</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Puterea n a unui numar a, notată a<sup>n</sup>, este o operatie dintre aceste numere, numite baza, respectiv exponent. In vorbire a<sup>n</sup> se pronunta "a la puterea n", sau, pe scurt, "a la n", Dacă n este un numar natural, atunci ridicarea la putere poate fi definita ca o inmultire repetata:
+                <br>Ex: 2<sup>3</sup> = 2 * 2 * 2
+                <br>Ex: 0<sup>n</sup> = 1
+                <br>Ex: 3<sup>3</sup> = 3 * 3 * 3
+                <br>
+                <br>Orice numar la puterea 0 este 1!
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+   <!-- the setari tab of the app-->
+    <div id="setari_wrapper">
+   <div id="setari_tab">
+       <div id="teme">
+           <ul>
+               <li id="light" class="light red">Atingeti pentru tema LIGHT</li>
+               <li id="dark" class="dark yellow">Atingeti pentru tema DARK</li>
+           </ul>
+       </div>
+   </div>
+    </div>
+
+   <div id="conversie_wrapper">
+   <div class="conversie_tab">
+       <div id="input">
+           <input name="number" id="number" type="number" placeholder="Introduceti un numar" min="0" max="10000000"/>
+           <br>
+           <input name="number" id="base" type="number" placeholder="Introduceti baza" min="2" max="16"/>
+           <button id="fire" onclick="getAndSolve();">Fire</button>
+       </div>
+       <div class="solutions">
+            <p id="conv_sol">...</p>
+       </div>
+
+   </div>
+
+    <!--div with information about conversie -->
+    <div id="conversie_info">
+        <h3>Conversii intre baze de numeratie</h3>
+        <div class="card_info">
+            <div class="content_info">
+                Prin conversia unui numar dintr-o baza de numeratie in alta realizam o serie de operatii matematice elementare. Atunci cand trecem
+                un numar din baza de numeratie a in baza de numeratie b impartim numarul a la b atata timp cat acesta este mai mare ca zero
+                iar resturile obtinute in urma impartirii numarului a la b scrise in ordine inversa reprezinta numarul a scris in baza b.
+                <br>Ex:
+                <br>
+                <br>12<sub>(10)</sub> = 1100<sub>(2)</sub>
+                <br>123<sub>(10)</sub> = 11110110<sub>(2)</sub>
+                <br>188<sub>(10)</sub> = BC<sub>(16)</sub>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <div id="alte_informatii_wrapper">
+   <div id="alte_informatii">
+        <div class="card">
+            <h2>Despre Math Beast</h2>
+                <div class="content">
+                    Aplicatia Math Beast a fost realizata de catre elevul Ursulean Ciprian utilizand urmatoarele tehnologii web: <a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML5 </a>, <a href="http://www.w3schools.com/css/default.asp" target="_blank" >CSS3</a> (SCSS), <a href="http://www.w3schools.com/js/default.asp" target="_blank" >JAVASCRIPT (ES6)</a> <a href="http://www.w3schools.com/jquery/default.asp" target="_blank" >(JQUERY) </a>, intreaga aplicatie fiind scrisa in programul Jetbrain Intellij Idea Ultimate.
+                    Aceasta alicatie realizeaza cateva operatii matematice destul de simple , de la adunare si scadere pana la conversii intre baza 10 si alte baza de numeratie. Design-ul acestei aplicatii este inspirat de catre <a href="https://material.google.com/style/color.html">Google Material Design </a>, desi
+                    design-ul aplicatiei Math Beast a fost realizat de catre elevul Ursulean Ciprian de la 0, astfel nu au fost folosite template-uri sau alte parti de cod realizate de alte persoane.
+                </div>
+        </div>
+
+       <div class="card">
+           <h2>Despre dezvoltator</h2>
+           <div class="content">
+               Ciprian Ursulean este elev in clasa a XI-a B (profil real, specializarea matemetica - informatica) la Liceul Tehnologic Ion Nistor din Vicovu de Sus.
+           </div>
+       </div>
+       <footer>
+           <p>Made &amp; Designed By Ciprian Ursulean. (C) 2015 - 2017 all rights reserved.</p>
+       </footer>
+   </div>
+   </div>
+
+   <!-- Scripts pentru Jquery-->
+   <script src="libs/jquery-3.1.1.min.js"></script>
+
+   <!-- Script - uri pentru operatii matematice -->
+   <!-- script pentru conversie numere in baza de numeratie diferite -->
+   <script src="scripts/math_scripts/conversii.js"></script>
+
+   <!-- Script - uri pentru aspectul SPA si main design -->
+   <script src="scripts/design_scripts/operatii_matematice_layout.js"></script>
+
+   <!-- Script - uri pentru operatia de adunare si designul acesteia -->
+   <script src="scripts/math_scripts/adunare.js"></script>
+
+   <!-- Script - uri pentru operatia de scadere si designul acesteia -->
+   <script src="scripts/math_scripts/scadere.js"></script>
+
+   <!-- Script - uri pentru operatia de inmultire si designul acesteia -->
+   <script src="scripts/math_scripts/inmultire.js"></script>
+
+   <!-- Script - uri pentru operatia de inmultire si designul acesteia -->
+   <script src="scripts/math_scripts/impartire.js"></script>
+
+   <!-- Script - uri pentru operatia de calculare a radicalului si design-ul acesteia -->
+   <script src="scripts/math_scripts/radical.js"></script>
+
+   <!-- Script - uri pentru operatia de calculare a puterii si design - ul acesteia -->
+   <script src="scripts/math_scripts/putere.js"></script>
+
+   <!-- Script pentru gestionarea setarilor -->
+   <script src="scripts/design_scripts/setari.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+img.putere {
+  width: 28px;
+  height: 28px;
+}
+
+#menu {
+  z-index: 9;
+  width: $m_width;
+  height: $m_height;
+  position: absolute;
+  top: 80px;
+  left: 5px;
+  ul {
+    list-style-type: none;
+    position: relative;
+    right: 40px;
+    li {
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      img {
+        width: 28px;
+        height: 28px;
+        z-index: 11;
+        padding: 17px;
+        &.putere {
+          width: 20px;
+          height: 20px;
+          padding: 20.5px;
+        }
+        &.setari {
+          position: relative;
+          top: 40px;
+        }
+      }
+      #conversie {
+        z-index: 11;
+      }
+    }
+  }
+}
+

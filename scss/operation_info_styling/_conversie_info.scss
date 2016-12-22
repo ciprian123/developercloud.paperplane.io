@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.content_info {
+  color: white;
+  padding: 0;
+  width: 280px;
+  margin: auto;
+  font-family: 'Arimo', sans-serif;
+  font-size: 18px;
+}
+
+.card_info {
+  padding: 0;
+  @extend .content;
+  position: relative;
+  top: 80px;
+}
+
+h3 {
+  color: white;
+  position: relative;
+  top: 60px;
+  text-align: center;
+}
