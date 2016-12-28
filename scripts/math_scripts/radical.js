@@ -26,17 +26,19 @@ function getAndRad() {
             return true;
     }
 
-    if (getFirstNumber() != true && getSecondNumber() != true) {
-        if (getSecondNumber() <= 0)
+    numar_1 = getFirstNumber();
+    numar_2 = getSecondNumber();
+    if (numar_1 != true && numar_2 != true) {
+        if (numar_2 <= 0)
             $("#rezultatulRadicalului").html("Ordinul nu este pozitiv!");
-        else if (getSecondNumber() >= 100)
+        else if (numar_2 >= 100)
             $("#rezultatulRadicalului").html("Ordinul maxim este 100!");
         else {
-            $("#rezultatulRadicalului").html(Math.pow(getFirstNumber(), (1 / getSecondNumber())));
+            $("#rezultatulRadicalului").html(Math.pow(numar_1, (1 / numar_2)));
             fire();
         }
     }
-    else if (((getFirstNumber() != true) && getSecondNumber() == true) || ((getFirstNumber() == true) && getSecondNumber() != true))
+    else if (((numar_1 != true) && numar_2 == true) || ((numar_1 == true) && numar_2 != true))
         $("#rezultatulRadicalului").html("Scrie valori nenule...");
     else
         $("#rezultatulRadicalului").html("Campurile sunt goale...");

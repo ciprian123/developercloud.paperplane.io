@@ -26,15 +26,17 @@ function getAndPow() {
             return true;
     }
 
-    if ((getFirstNumber() == true) && (getSecondNumber() == true))
+    numar_1 = getFirstNumber();
+    numar_2 = getSecondNumber();
+    if ((numar_1 == true) && (numar_2 == true))
         $("#rezultatulRidicarii").html("Campurile sunt goale...");
-    else if (((getFirstNumber() != true) && getSecondNumber() == true) || ((getFirstNumber() == true) && getSecondNumber() != true))
+    else if (((numar_1 != true) && numar_2 == true) || ((numar_1 == true) && numar_2 != true))
         $("#rezultatulRidicarii").html("Scrieti inca o valoare...");
     else {
-        if (getSecondNumber() > 100)
+        if (numar_2 > 100)
             $("#rezultatulRidicarii").html("Exponentul maxim este 100");
         else {
-            $("#rezultatulRidicarii").html(Math.pow(getFirstNumber(), getSecondNumber()));
+            $("#rezultatulRidicarii").html(Math.pow(numar_1, numar_2));
             fire();
         }
     }

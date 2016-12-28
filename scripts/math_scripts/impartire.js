@@ -26,15 +26,17 @@ function getAndDiv() {
             return true;
     }
 
-    if ((getFirstNumber() == true) && (getSecondNumber() == true))
+    numar_1 = getFirstNumber();
+    numar_2 = getSecondNumber();
+    if ((numar_1 == true) && (numar_2 == true))
         $("#rezultatulImpartirii").html("Campurile sunt goale...");
-    else if (((getFirstNumber() != true) && getSecondNumber() == true) || ((getFirstNumber() == true) && getSecondNumber() != true))
+    else if ((((numar_1) != true) && numar_2 == true) || ((numar_1 == true) && numar_2 != true))
         $("#rezultatulImpartirii").html("Scrieti inca o valoare...");
     else {
-        if (getSecondNumber() == 0)
+        if (numar_2 == 0)
             $("#rezultatulImpartirii").html("Eroare! Impartire la 0!");
         else {
-            $("#rezultatulImpartirii").html(parseFloat(getFirstNumber() / getSecondNumber()));
+            $("#rezultatulImpartirii").html(parseFloat(numar_1 / numar_2));
             fire();
         }
     }

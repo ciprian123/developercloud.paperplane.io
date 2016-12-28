@@ -26,12 +26,14 @@ function getAndAdd() {
             return true;
     }
 
-    if ((getFirstNumber() == true) && (getSecondNumber() == true))
+    numar_1 = getFirstNumber();
+    numar_2 = getSecondNumber();
+    if ((numar_1 == true) && (numar_2 == true))
         $("#rezultatulAdunarii").html("Campurile sunt goale...");
-    else if (((getFirstNumber() != true) && getSecondNumber() == true) || ((getFirstNumber() == true) && getSecondNumber() != true))
+    else if (((numar_1 != true) && numar_2 == true) || ((numar_1 == true) && numar_2 != true))
         $("#rezultatulAdunarii").html("Scrie inca o valoare...");
     else {
-        $("#rezultatulAdunarii").html(Number(getFirstNumber() + getSecondNumber()));
+        $("#rezultatulAdunarii").html(Number(numar_1 + numar_2));
         fire();
     }
 }

@@ -64,20 +64,23 @@ function getAndSolve() {
     }
 
 
-    if (getNumber() == -1) {
+    let base = getBase();
+    let number = getNumber();
+    if (number == -1) {
         $("#conv_sol").html("Scrie un numar natural nenul!");
-    } else if (getNumber() == 1) {
+    } else if (number == 1) {
         $("#conv_sol").html("1");
     }
     else {
-        if (getBase() < 2 || getBase() > 16)
+
+        if (base < 2 || (base > 10 && base < 16) || base > 16)
             $("#conv_sol").html("Baza este incorecta");
         else {
             fire();
-            if (getBase() == 16)
-                conversie_b16(getNumber());
+            if (base === 16)
+                conversie_b16(number);
             else
-                $("#conv_sol").html(conversie(getNumber(), getBase()));
+                $("#conv_sol").html(conversie(number, base));
         }
     }
 }
