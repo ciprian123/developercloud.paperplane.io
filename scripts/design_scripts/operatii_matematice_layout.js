@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("header h1").fadeIn("slow");
     $(".conversie_tab, #conversie_info").show();
     $("header, #alte_informatii").css("background", "#1976D2");
     $("#menu").css("background", "#FFC107");
@@ -12,7 +13,7 @@ $(document).ready(function(){
         $(".adunare, .scadere, .inmultire, .impartire, .radical, .putere").css("background", "none");
         $("#menu").css("background", "#FFC107");
         $("header, #alte_informatii").css("background", "#1976D2");
-        $("header h1").html("Baze de numeratie").fadeIn("slow");
+        $("header h1").html("Baze de numeratie");
         $("#alte_informatii h2, .card a").css("color", "#FFC107");
         $("#conversie_info").css("background", "#9C27B0");
     });
@@ -29,9 +30,9 @@ $(document).ready(function(){
    });
 
    $("#minus").click(function(){
-      $("div#scadere_tab, #scadere_info").show();
-      $("#adunare_tab, #adunare_info, #inmultire_tab, #inmultire_info, #impartire_tab, #impartire_info, #radical_tab, #radical_info, #setari_tab, .conversie_tab, #conversie_info").hide();
-      $(".conversie, .adunare, .inmultire, .impartire, .radical, .putere, .setari").css("background", "none");
+       $("div#scadere_tab, #scadere_info").show();
+       $("#adunare_tab, #adunare_info, #inmultire_tab, #inmultire_info, #impartire_tab, #impartire_info, #radical_tab, #radical_info, #setari_tab, .conversie_tab, #conversie_info").hide();
+       $(".conversie, .adunare, .inmultire, .impartire, .radical, .putere, .setari").css("background", "none");
       $("#menu").css("background", "#d80073");
       $("header, #alte_informatii").css("background", "#008a00");
       $("header h1").html("Scaderea numerelor");
@@ -40,7 +41,7 @@ $(document).ready(function(){
    });
 
    $("#ori").click(function(){
-      $("div#inmultire_tab, #inmultire_info").show();
+       $("div#inmultire_tab, #inmultire_info").show();
       $("#adunare_tab, #adunare_info, #scadere_tab, #scadere_info, #impartire_tab, #impartire_info, #radical_tab, #radical_info, #setari_tab, .conversie_tab, #conversie_info").hide();
       $(".conversie, .adunare, .scadere, .impartire, .radical, .putere, .setari").css("background", "none");
       $("#menu").css("background", "#a20025");
@@ -51,7 +52,7 @@ $(document).ready(function(){
    });
 
    $("#divide").click(function(){
-      $("div#impartire_tab, #impartire_info").show();
+       $("div#impartire_tab, #impartire_info").show();
       $("#adunare_tab, #adunare_info, #scadere_tab, #scadere_info, #inmultire_tab, #inmultire_info, #radical_tab, #radical_info, #setari_tab, .conversie_tab, #conversie_info").hide();
       $(".conversie, .adunare, .scadere, .inmultire, .radical, .putere, .setari").css("background", "none");
       $("#menu").css("background", "#e51400");
@@ -62,7 +63,7 @@ $(document).ready(function(){
    });
 
    $("#radical").click(function(){
-      $("div#radical_tab, #radical_info").show();
+       $("div#radical_tab, #radical_info").show();
       $("#adunare_tab,#adunare_info,  #scadere_tab, #scadere_info, #inmultire_tab, #inmultire_info, #impartire_tab, #impartire_info, #ridicare_putere_tab, #putere_info, #setari_tab, .conversie_tab, #conversie_info").hide();
       $(".conversie, .adunare, .scadere, .inmultire, .impartire, .putere, .setari").css("background", "none");
       $("#menu").css("background", "#FF4081");
@@ -73,7 +74,7 @@ $(document).ready(function(){
    });
 
    $("#putere").click(function(){
-      $("div#ridicare_putere_tab, #putere_info").show();
+       $("div#ridicare_putere_tab, #putere_info").show();
       $("#adunare_tab, #adunare_info, #scadere_tab, #scadere_info, #inmultire_tab, #inmultire_info, #impartire_tab, #impartire_info, #radical_tab, #radical_info, #setari_tab, .conversie_tab, #conversie_info").hide();
       $(".conversie, .adunare, .scadere, .inmultire, .impartire, .radical, .setari").css("background", "none");
       $("#menu").css("background", "#FF5722");
