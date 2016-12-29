@@ -63,16 +63,27 @@ input:focus, button:focus {
 
 button {
   position: relative;
-  left: -170px;
+  left: -150px;
   top: 320px;
-  width: 100px;
-  height: 50px;
   border-radius: 5px;
   margin: auto;
-  background: $button;
   border: none;
   color: white;
   font-size: 22px;
+  background: $button;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px $shadow;
+  &:hover {
+      background: #00E676;
+      transition: 0.7s;
+  }
+  img {
+      padding-top: 5px;
+      width: 32px;
+      height: 32px;
+  }
   &:hover {
     background: $hover;
     transition: 0.5s;
